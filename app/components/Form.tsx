@@ -19,7 +19,7 @@ export default function Form() {
     >
       <input
         type="text"
-        placeholder="Your message..."
+        placeholder="👋 Leave me a message..."
         name="entry"
         required
         disabled={pending}
