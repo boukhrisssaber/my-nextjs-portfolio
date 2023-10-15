@@ -43,7 +43,7 @@ export default function Home() {
                 <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z" />
               </svg>
             </a>
-            <a href="mailto:boukhrisssaber@gmail.com" target="">
+            <a href="mailto:boukhrisssaber@gmail.com" target="_blank">
               <svg
                 viewBox="0 0 1024 1024"
                 fill="currentColor"
@@ -52,7 +52,16 @@ export default function Home() {
                 <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 01194 256h648.8a7.2 7.2 0 014.4 12.9z" />
               </svg>
             </a>
-            <a href="https://twitter.com/saberboukhriss/likes" target="_blank">
+            <a href="https://www.facebook.com/saberboukhrissforreal" target="_blank">
+              <svg
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  className="w-8 h-8 text-teal-500 hover:text-teal-600"
+              >
+                  <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z" />
+              </svg>
+          </a>
+            <a href="https://twitter.com/saberboukhriss" target="_blank">
               <svg
                 viewBox="0 0 1024 1024"
                 fill="currentColor"
@@ -66,20 +75,20 @@ export default function Home() {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hey everyone my name is Saber, I am 25 years old and i am a Junior Cybersecurity specialist based in Sfax/TUNISIA
+            Hello, my name is Saber. I am a Junior Cybersecurity Specialist based in Sfax, Tunisia.
           </p>
           <p>
-          I work in cybersecurity, specializing in web security and pentesting.
-          I have a master&apos;s degree in information systems security and NSE 1, 2, and 3 certifications. 
-          In addition to my studies, I&apos;ve also gained experience through an internship in cybersecurity. 
-          To keep learning, I participate in CTF challenges.
+            I specialize in web security and pentesting and hold a master&apos;s degree in information systems security.
+            I am also certified in NSE 1, 2, and 3.
           </p>
           <p>
-          My main goal is to help organizations keep their data and systems safe, 
-          and I also enjoy teaching users about cyber safety. Outside of cybersecurity, 
-          I&apos;m interested in graphic design, project management, and digital marketing 
-          I love using my technical and creative skills to develop effective solutions. 
-          If you&apos;d like to chat, feel free to reach out!
+            I have gained experience through an internship in cybersecurity and participate in CTF challenges to keep learning.
+            My main goal is to help organizations keep their data and systems safe. I also enjoy teaching users about cyber safety.
+          </p>
+          <p>
+            In addition to my cybersecurity expertise, I have interests in graphic design, project management, and digital marketing.
+            I love using my technical and creative skills to develop effective solutions.
+            If you would like to chat, feel free to reach out to me!
           </p>
         </div>
       </div>
