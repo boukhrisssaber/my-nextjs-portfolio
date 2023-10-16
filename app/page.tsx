@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Me from "@/public/pdp.jpg";
 
+
 export default function Home() {
+
   return (
-    <div className="divide-y divide-gray-100 dark:divide-gray-700">
+
+      <div className="divide-y divide-gray-100 dark:divide-gray-700">
       <div className="space-y-2 pt-5 pb-8 md:space-x-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-13">
           Home
@@ -15,8 +18,7 @@ export default function Home() {
           <Image
             alt="Picture of saber boukhriss"
             src={Me}
-            className="h-48 w-48 rounded-full object-cover object-top"
-          />
+            className="h-48 w-48 rounded-full object-cover object-top" />
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
             Saber Boukhriss
           </h3>
@@ -54,13 +56,13 @@ export default function Home() {
             </a>
             <a href="https://www.facebook.com/saberboukhrissforreal" target="_blank">
               <svg
-                  viewBox="0 0 1024 1024"
-                  fill="currentColor"
-                  className="w-8 h-8 text-teal-500 hover:text-teal-600"
+                viewBox="0 0 1024 1024"
+                fill="currentColor"
+                className="w-8 h-8 text-teal-500 hover:text-teal-600"
               >
-                  <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z" />
+                <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z" />
               </svg>
-          </a>
+            </a>
             <a href="https://twitter.com/saberboukhriss" target="_blank">
               <svg
                 viewBox="0 0 1024 1024"
@@ -75,12 +77,12 @@ export default function Home() {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p> 👋 Hello, my name is Saber. I am a Junior Cybersecurity Specialist based in Sfax, Tunisia. </p>
-          <p> 🔒 I specialize in web security and pentesting and hold a master’s degree in information systems security. 
-          I am also certified in NSE 1, 2, and 3. </p>
+          <p> 🔒 I specialize in web security and pentesting and hold a master’s degree in information systems security.
+            I am also certified in NSE 1, 2, and 3. </p>
           <p> 🎓 I have gained experience through an internship in cybersecurity and participate in CTF challenges to keep learning.
-          🤓 My main goal is to help organizations keep their data and systems safe. I also enjoy teaching web users about cyber safety. 🧑‍🏫 </p>
+            🤓 My main goal is to help organizations keep their data and systems safe. I also enjoy teaching web users about cyber safety. 🧑‍🏫 </p>
           <p> 🎨 In addition to my cybersecurity expertise, I have interests in graphic design, project management, and digital marketing.
-          💻 I love using my technical and creative skills to develop effective solutions. 💡 If you would like to chat, feel free to reach out to me! 📩 </p>
+            💻 I love using my technical and creative skills to develop effective solutions. 💡 If you would like to chat, feel free to reach out to me! 📩 </p>
         </div>
       </div>
     </div>
