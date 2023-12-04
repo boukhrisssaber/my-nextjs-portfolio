@@ -78,8 +78,8 @@ export default function Home() {
           <p> 👋 Hello, my name is Saber. I am a Junior Cybersecurity Specialist based in Sfax, Tunisia. </p>
           <p> 🔒 I specialize in web security and pentesting and hold a master’s degree in information systems security.
             I am also certified in NSE 1, 2, and 3. </p>
-          <p> 🎓 I have gained experience through an internship in cybersecurity and participate in CTF challenges to keep learning.
-            🤓 My main goal is to help organizations keep their data and systems safe. I also enjoy teaching web users about cyber safety. 🧑‍🏫 </p>
+          <p> 🎓 I have gained my current experience through my job as a Junior Cybersecurity Specialist, an internship in cybersecurity, and participating in CTF challenges to keep learning.
+            🤓 My main goal is to help organizations keep their data and systems safe. I also enjoy teaching web users about cybersecurity awareness and cyber safety. 🧑‍🏫 </p>
           <p> 🎨 In addition to my cybersecurity expertise, I have interests in graphic design, project management, and digital marketing.
             💻 I love using my technical and creative skills to develop effective solutions. 💡 If you would like to chat, feel free to reach out to me! 📩 </p>
         </div>
