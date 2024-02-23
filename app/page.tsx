@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
-          <p> 👋 Hello there, I'm Saber, a Junior Cybersecurity Specialist based in Sfax, Tunisia.  </p>
+        <p> 👋 Hello there, I'm Saber, a Junior Cybersecurity Specialist based in Sfax, Tunisia.  </p>
           <p> 🔒 I specialize in web security and pentesting and hold a master's degree in information systems security. 
             Furthermore, I am certified in EC-Council's Web Application Hacking and Security and NSE 1, 2, and 3. </p>
           <p> 🎓 I have gained experience through an internship in cybersecurity and by participating in CTF challenges to keep learning. 
