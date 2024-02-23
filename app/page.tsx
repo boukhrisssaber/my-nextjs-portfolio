@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Me from "@/public/pdp.png";
+import Me from "@/public/pdp-sqr-min.png";
 
 export default function Home() {
 
