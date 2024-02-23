@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Me from "@/public/pdp.jpg";
+import Me from "@/public/pdp.png";
 
 export default function Home() {
 
@@ -22,7 +22,7 @@ export default function Home() {
             Saber Boukhriss
           </h3>
           <p className="text-gray-500 dark:text-gray-300 text-center">
-            Junior Cyber Security Specialist | Pentesting | NSE 1,2&3 | SIEM | Qradar | CTF Player | Web security enthusiast
+            Junior Cyber Security Specialist | Pentesting | WAHS | NSE 1,2&3 | SIEM | Qradar | CTF Player | Web security enthusiast
           </p>
 
           <div className="flex space-x-5 pt-6">
@@ -53,15 +53,6 @@ export default function Home() {
                 <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 01194 256h648.8a7.2 7.2 0 014.4 12.9z" />
               </svg>
             </a>
-            <a href="https://www.facebook.com/saberboukhrissforreal" target="_blank">
-              <svg
-                viewBox="0 0 1024 1024"
-                fill="currentColor"
-                className="w-8 h-8 text-teal-500 hover:text-teal-600"
-              >
-                <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z" />
-              </svg>
-            </a>
             <a href="https://twitter.com/saberboukhriss" target="_blank">
               <svg
                 viewBox="0 0 1024 1024"
@@ -75,13 +66,13 @@ export default function Home() {
         </div>
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
-          <p> 👋 Hello, my name is Saber. I am a Junior Cybersecurity Specialist based in Sfax, Tunisia. </p>
-          <p> 🔒 I specialize in web security and pentesting and hold a master’s degree in information systems security.
-            I am also certified in NSE 1, 2, and 3. </p>
-          <p> 🎓 I have gained experience through an internship in cybersecurity and participate in CTF challenges to keep learning.
-            🤓 My main goal is to help organizations keep their data and systems safe. I also enjoy teaching web users about cyber safety. 🧑‍🏫 </p>
-          <p> 🎨 In addition to my cybersecurity expertise, I have interests in graphic design, project management, and digital marketing.
-            💻 I love using my technical and creative skills to develop effective solutions. 💡 If you would like to chat, feel free to reach out to me! 📩 </p>
+          <p> 👋 Hello there, I'm Saber, a Junior Cybersecurity Specialist based in Sfax, Tunisia.  </p>
+          <p> 🔒 I specialize in web security and pentesting and hold a master's degree in information systems security. 
+            Furthermore, I am certified in EC-Council's Web Application Hacking and Security and NSE 1, 2, and 3. </p>
+          <p> 🎓 I have gained experience through an internship in cybersecurity and by participating in CTF challenges to keep learning. 
+            🤓 My primary goal is to help organizations keep their data and systems safe. I also enjoy teaching web users about cyber safety. 🧑‍🏫 </p>
+          <p> 🎨 Apart from my cybersecurity expertise, I have interests in graphic design, project management, and digital marketing.
+            💻 I love using my technical and creative skills to develop effective solutions. If you want to get in touch, feel free to contact me! 📩 </p>
         </div>
       </div>
     </div>
