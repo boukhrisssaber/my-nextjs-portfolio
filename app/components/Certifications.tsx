@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { urlForImage } from "@/sanity/lib/image";
-import { Certification } from "@/sanity/types";
+import { urlForImage } from "../../sanity/lib/image";
+import { Certification } from "../../sanity/types";
 
 interface CertificationsProps {
   certifications: Certification[];
