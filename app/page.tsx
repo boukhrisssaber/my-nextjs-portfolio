@@ -41,10 +41,10 @@ export default async function Home() {
             Saber Boukhriss
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Cybersecurity Specialist
+            Junior Cybersecurity Specialist
           </p>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl">
-            Protecting digital assets through expertise in web security, pentesting, and SIEM
+            Keeping organizations safe with hands-on experience in pentesting, security monitoring, and building awareness programs. I love languages, mentoring, and making tech accessible for everyone!
           </p>
         </div>
         <div className="flex space-x-6">
@@ -88,44 +88,52 @@ export default async function Home() {
       </section>
 
       {/* Content Sections */}
-      <section className="grid gap-8 md:grid-cols-2">
-        <div className="space-y-6">
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
-            <h2 className="text-2xl font-bold mb-4">About Me</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              👋 Hello there, I'm Saber, a Junior Cybersecurity Specialist based in Sfax, Tunisia.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300">
-              🔒 I specialize in web security and pentesting and hold a master's degree in information systems security. Furthermore, I am certified in EC-Council's Web Application Hacking and Security and NSE 1, 2, and 3.
-            </p>
-          </div>
-
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
-            <h2 className="text-2xl font-bold mb-4">Experience & Goals</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              🎓 I have gained experience through an internship in cybersecurity and by participating in CTF challenges to keep learning.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300">
-              🤓 My primary goal is to help organizations keep their data and systems safe. I also enjoy teaching web users about cyber safety.
-            </p>
-          </div>
+      <section className="space-y-8">
+        <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <h2 className="text-2xl font-bold mb-4">About Me</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            👋 Hi, I'm Saber Boukhriss, a Junior Cybersecurity Specialist based in Sfax, Tunisia.
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            🔐 Passionate about keeping organizations safe, with hands-on experience in penetration testing, security monitoring, and building awareness programs.
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            🌍 I love languages—besides Arabic, I speak English, French, and a bit of German, Spanish, and Japanese!
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            💡 I enjoy mentoring, collaborating, and making tech accessible for everyone.
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            🎓 <b>Professional Master's in Information Systems Security</b> (ISIM Gabes, University of Gabes, 2023)<br />
+            🎓 <b>Applied License in Computer Science</b> (ISI Mahdia, University of Monastir, 2021)
+          </p>
         </div>
 
-        <div className="space-y-6">
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
-            <h2 className="text-2xl font-bold mb-4">Beyond Cybersecurity</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              🎨 Apart from my cybersecurity expertise, I have interests in graphic design, project management, and digital marketing.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300">
-              💻 I love using my technical and creative skills to develop effective solutions. If you want to get in touch, feel free to contact me!
-            </p>
-          </div>
+        <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <h2 className="text-2xl font-bold mb-4">Experience & Achievements</h2>
+          <ul className="text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+            <li>
+              💼 <b>Junior Cybersecurity Specialist @ Securas Technologies (2023–Present)</b><br />
+              Penetration testing, security event monitoring, awareness programs, reporting, virtualization, mentoring, and more.<br />
+              <span className="text-teal-500">🏆 Key win: Added a new security solution, boosting productivity and speeding up processes.</span>
+            </li>
+            <li>
+              🛡️ <b>Cybersecurity Engineering Intern @ Securas Technologies (2023)</b><br />
+              Built an automated SaaS vulnerability scanner, web app pentesting, and managed Linux/Docker environments.
+            </li>
+            <li>
+              🔭 <b>SOC Analyst Intern (Remote) @ SecuLeague via Alphanumerix, France (2022–2023)</b><br />
+              Designed SIEM Qradar use cases, led threat hunting & incident response, managed VMware ESXi environments.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
-            <h2 className="text-2xl font-bold mb-6">Certifications</h2>
-            <Certifications certifications={certifications} />
-          </div>
+      {/* Certifications Carousel Section */}
+      <section className="w-full max-w-6xl mx-auto mt-8">
+        <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <h2 className="text-2xl font-bold mb-6 text-center">Certifications</h2>
+          <Certifications certifications={certifications} />
         </div>
       </section>
     </div>
