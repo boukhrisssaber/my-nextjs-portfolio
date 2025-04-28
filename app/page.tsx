@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Me from "@/public/pdp-sqr-min.png";
-import { client } from "@/sanity/lib/client";
+import { client } from "../sanity/lib/client";
 import Certifications from "./components/Certifications";
 
 async function getCertifications() {
