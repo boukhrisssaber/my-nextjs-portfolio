@@ -41,10 +41,7 @@ export default async function Home() {
             Saber Boukhriss
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Junior Cybersecurity Specialist
-          </p>
-          <p className="text-gray-500 dark:text-gray-400 max-w-2xl">
-            Keeping organizations safe with hands-on experience in pentesting, security monitoring, and building awareness programs. I love languages, mentoring, and making tech accessible for everyone!
+            Cybersecurity Specialist
           </p>
         </div>
         <div className="flex space-x-6">
@@ -92,20 +89,22 @@ export default async function Home() {
         <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            👋 Hi, I'm Saber Boukhriss, a Junior Cybersecurity Specialist based in Sfax, Tunisia.
-          </p>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            🔐 Passionate about keeping organizations safe, with hands-on experience in penetration testing, security monitoring, and building awareness programs.
-          </p>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            🌍 I love languages—besides Arabic, I speak English, French, and a bit of German, Spanish, and Japanese!
-          </p>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            💡 I enjoy mentoring, collaborating, and making tech accessible for everyone.
-          </p>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            🎓 <b>Professional Master's in Information Systems Security</b> (ISIM Gabes, University of Gabes, 2023)<br />
-            🎓 <b>Applied License in Computer Science</b> (ISI Mahdia, University of Monastir, 2021)
+            👋 Hi, I'm Saber Boukhriss — a cybersecurity enthusiast based in Tunisia, on a mission to make digital spaces safer and smarter.
+
+From securing Web Systems to guiding others in their security journey, I've built a career rooted in curiosity, resilience, and continuous learning. My passion lies in penetration testing, security monitoring, and creating awareness programs that demystify cybersecurity for teams and organizations.
+
+I'm also the creator of CyberFlex (check the projects page), a cybertoolkit designed to simplify and centralize essential cybersecurity tools for professionals and learners alike.
+
+When I'm not diving into logs or crafting security reports, you'll find me learning new languages or mentoring aspiring professionals in the field.
+<br /><br />
+🌐 Languages:<br />
+Arabic (native), English (fluent), French (professional), German, Spanish, and, Japanese (basic)
+<br />
+<br />
+🎓 Education:<br />
+Master's in Information Systems Security – ISIM Gabes, University of Gabes (2023)
+<br />
+Applied License in Computer Science – ISI Mahdia, University of Monastir (2021)
           </p>
         </div>
 
@@ -113,18 +112,16 @@ export default async function Home() {
           <h2 className="text-2xl font-bold mb-4">Experience & Achievements</h2>
           <ul className="text-gray-600 dark:text-gray-300 mb-4 space-y-2">
             <li>
-              💼 <b>Junior Cybersecurity Specialist @ Securas Technologies (2023–Present)</b><br />
-              Penetration testing, security event monitoring, awareness programs, reporting, virtualization, mentoring, and more.<br />
-              <span className="text-teal-500">🏆 Key win: Added a new security solution, boosting productivity and speeding up processes.</span>
+                ⚙️ <b>Founder & Developer – CyberFlex (2024–Present)</b><br />
+                Launched a web-based cybertoolkit offering free tools and utilities for security, development and design pros and students.
+                Designed with usability, modularity, and security in mind.
+                Tools include port scanner, Freelancing fees and rates calculators, and other many tools
             </li>
             <li>
-              🛡️ <b>Cybersecurity Engineering Intern @ Securas Technologies (2023)</b><br />
-              Built an automated SaaS vulnerability scanner, web app pentesting, and managed Linux/Docker environments.
-            </li>
-            <li>
-              🔭 <b>SOC Analyst Intern (Remote) @ SecuLeague via Alphanumerix, France (2022–2023)</b><br />
-              Designed SIEM Qradar use cases, led threat hunting & incident response, managed VMware ESXi environments.
-            </li>
+              🛡️ <b>Junior Cybersecurity Specialist @ Securas Technologies (2023–2025)</b><br />
+              At Securas, I handle a mix of penetration testing, SIEM analysis, user awareness, and even internal mentoring.<br />
+              Impact: Introduced a new security solution that significantly improved team efficiency and detection speed in pentesting.
+              I also help shape internal cybersecurity strategies and support virtualization environments.            </li>
           </ul>
         </div>
       </section>

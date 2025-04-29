@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Saber Boukhriss | Cybersecurity Specialist",
-  description: "Junior Cybersecurity Specialist specializing in web security, pentesting, and SIEM. Certified in EC-Council's Web Application Hacking and Security, NSE 1, 2, and 3.",
+  description: "Cybersecurity Specialist specializing in web security, pentesting, and SIEM. EC-Council certified professional based in Sfax, Tunisia.",
   keywords: ["Cybersecurity", "Pentesting", "Web Security", "SIEM", "Qradar", "CTF Player", "Security Specialist"],
   authors: [{ name: "Saber Boukhriss" }],
   openGraph: {
