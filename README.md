@@ -1,44 +1,59 @@
-Commands you will need
+# Next.js Portfolio Template
 
-```bash
-npm i -D prisma @tailwindcss/typography @tailwindcss/forms
+A modern, open source portfolio template built with Next.js, featuring a beautiful design, a dynamic 'Hire Me' page, testimonial slider, FAQ/services, and easy customization.
 
-
-npm i next-themes @headlessui/react @prisma/client next-sanity
-```
-
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Features
+- ⚡ Modern, responsive design
+- 🧑‍💻 "Hire Me" page with real testimonials and review slider
+- 🌍 FAQ/services section (easily customizable)
+- 🌙 Dark mode support
+- 🛠️ Built with Next.js 15+, Tailwind CSS, and Swiper.js
+- 🔓 Open source and ready for your contributions
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. **Open [http://localhost:3000](http://localhost:3000) to view your site.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Customization
+- Edit content in the `/app` directory (pages, components, etc.)
+- Update testimonials, FAQ, and services in `app/hire-me/page.tsx`
+- Replace images/logos in the `/public` directory
+- Tweak styles in `app/globals.css` and `tailwind.config.js`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
+[MIT](LICENSE)
 
-## Learn More
+## Credits
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Swiper.js](https://swiperjs.com/)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with ❤️ by Saber Boukhriss and the open source community.

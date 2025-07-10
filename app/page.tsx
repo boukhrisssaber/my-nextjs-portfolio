@@ -102,6 +102,8 @@ Arabic (native), English (fluent), French (professional), German, Spanish, and, 
 <br />
 <br />
 🎓 Education:<br />
+Master's in Cybersecurity and Intelligent industry – FSS Sfax, University of Sfax (Ongoing)
+<br />
 Master's in Information Systems Security – ISIM Gabes, University of Gabes (2023)
 <br />
 Applied License in Computer Science – ISI Mahdia, University of Monastir (2021)
