@@ -9,41 +9,42 @@ import "swiper/css/pagination";
 import { useState, useRef } from "react";
 import type { Swiper as SwiperType } from 'swiper';
 import type { SwiperRef } from 'swiper/react';
+import ReactCountryFlag from "react-country-flag";
 
 const reviews = [
   {
     platform: "Upwork",
     logo: "/upwork.svg",
     client: "Marie",
-    country: "🇫🇷",
+    country: "FR",
     text: `I had the pleasure of working with Saber on a cybersecurity assessment and pentesting project, and I’m extremely satisfied with the outcome. The quality of the work delivered was highly professional and exceeded my expectations. Communication throughout the project was clear, timely, and efficient. The final report was thorough, well-structured, and provided valuable insights. I highly recommend this freelancer to anyone looking for expert-level cybersecurity services. I look forward to working together again in the future.`
   },
   {
     platform: "Fiverr",
     logo: "/fiverr.svg",
     client: "David",
-    country: "🇵🇹",
+    country: "PT",
     text: `Saber Boukhriss truly impressed in the cybersecurity realm with his PROFESSIONAL documentation and excellent cooperation. His work was timely and polite, making the collaboration seamless. HIGHLY recommend working with him! 🙌`
   },
   {
     platform: "Fiverr",
     logo: "/fiverr.svg",
     client: "Manny",
-    country: "🇬🇧",
+    country: "GB",
     text: `The professionalism and the standard of work was exceptional. The task was completed to a very high extent and good quality. Also the communication and delivery time was fantastic. I would highly recommend as its something you can rely on.`
   },
   {
     platform: "Fiverr",
     logo: "/fiverr.svg",
     client: "Tommy",
-    country: "🇯🇵",
+    country: "JP",
     text: `Found lots of good things for me to patch, and it was very quick and easy to get started.`
   },
   {
     platform: "Fiverr",
     logo: "/fiverr.svg",
     client: "Muftah",
-    country: "🇶🇦",
+    country: "QA",
     text: `Dedicated to work, fast and respectful.`
   },
 ];
@@ -124,9 +125,9 @@ export default function HireMe() {
                 <QuoteIcon />
                 <p className="text-lg font-medium text-gray-800 dark:text-gray-100 text-center mb-4 leading-relaxed">{review.text}</p>
                 <div className="flex items-center gap-3 mt-2">
-                  <Image src={review.logo} alt={review.platform + ' Logo'} width={28} height={28} className="rounded-full border border-gray-200 dark:border-gray-700" />
+                  <Image src={review.logo} alt={review.platform + ' Logo'} width={28} height={28} className="rounded-full" />
                   <span className="font-semibold text-gray-700 dark:text-gray-200">{review.client}</span>
-                  <span className="text-xl">{review.country}</span>
+                  <ReactCountryFlag countryCode={review.country} svg style={{ width: '1.5em', height: '1.5em', borderRadius: '0.25em' }} title={review.country} />
                 </div>
               </div>
             </SwiperSlide>
