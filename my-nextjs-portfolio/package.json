@@ -1,7 +1,8 @@
 {
   "name": "my-nextjs-portfolio",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.1.0",
+  "description": "Open source Next.js portfolio template with a modern 'Hire Me' page, testimonial slider, and FAQ/services.",
   "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
