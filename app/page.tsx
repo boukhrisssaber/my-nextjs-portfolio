@@ -128,7 +128,7 @@ Applied License in Computer Science – ISI Mahdia, University of Monastir (2021
             <li>
               💼 <b>Cybersecurity Consultant – GRC @ DefensyLAB (May 2025–Present)</b><br />
               At DefensyLAB, I specialize in Governance, Risk, and Compliance, helping clients align with ISO/IEC 27001, 27002, and 27005 standards through tailored security policies and risk frameworks.<br />
-              Impact: Led compliance assessments and gap analyses that enabled organizations to meet regulatory and industry security benchmarks.
+              Impact: Conducted compliance assessments and gap analyses that enabled organizations to meet regulatory and industry security benchmarks.
               I also design awareness programs to foster a strong security culture and formalize security processes to ensure audit readiness.
           </li>
           </ul>
