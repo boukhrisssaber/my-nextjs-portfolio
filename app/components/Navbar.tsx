@@ -16,10 +16,21 @@ export default function Navbar() {
               <div className="flex justify-between w-full">
                 <div className="flex items-center">
                   <Link href="/">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src="/mylogo.jpg"
+                      alt="Logo"
+                      className="w-10 h-13 object-contain shadow-md"
+                    />
                     <div className="leading-tight">
-                      <h1 className="text-2xl font-bold">Saber <span className="text-teal-500">BOUKHRISS</span></h1>
-                      <span className="block text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide">Cybersecurity Specialist</span>
+                      <h1 className="text-2xl font-bold">
+                        Saber <span className="text-teal-500">BOUKHRISS</span>
+                      </h1>
+                      <span className="block text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide">
+                        Cybersecurity Specialist
+                      </span>
                     </div>
+                  </div>
                   </Link>
                 </div>
 
