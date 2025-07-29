@@ -20,7 +20,7 @@ export default function Navbar() {
                     <img
                       src="/mylogo.png"
                       alt="Logo"
-                      className="w-10 h-13 object-contain shadow-md"
+                      className="w-10 h-13 object-contain"
                     />
                     <div className="leading-tight">
                       <h1 className="text-2xl font-bold">
