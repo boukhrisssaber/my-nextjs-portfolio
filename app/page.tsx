@@ -35,7 +35,7 @@ export default async function Home() {
           <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
             SB
           </div>
-        </div>*
+        </div>
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
             Saber Boukhriss
