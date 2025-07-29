@@ -18,7 +18,7 @@ export default function Navbar() {
                   <Link href="/">
                   <div className="flex items-center gap-3">
                     <img
-                      src="/mylogo.jpg"
+                      src="/mylogo.png"
                       alt="Logo"
                       className="w-10 h-13 object-contain shadow-md"
                     />
