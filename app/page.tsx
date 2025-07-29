@@ -35,7 +35,7 @@ export default async function Home() {
           <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
             SB
           </div>
-        </div>
+        </div>*
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
             Saber Boukhriss
@@ -123,7 +123,14 @@ Applied License in Computer Science – ISI Mahdia, University of Monastir (2021
               🛡️ <b>Junior Cybersecurity Specialist @ Securas Technologies (2023–2025)</b><br />
               At Securas, I handle a mix of penetration testing, SIEM analysis, user awareness, and even internal mentoring.<br />
               Impact: Introduced a new security solution that significantly improved team efficiency and detection speed in pentesting.
-              I also help shape internal cybersecurity strategies and support virtualization environments.            </li>
+              I also help shape internal cybersecurity strategies and support virtualization environments.            
+            </li>
+            <li>
+              💼 <b>Cybersecurity Consultant – GRC @ DefensyLAB (May 2025–Present)</b><br />
+              At DefensyLAB, I specialize in Governance, Risk, and Compliance, helping clients align with ISO/IEC 27001, 27002, and 27005 standards through tailored security policies and risk frameworks.<br />
+              Impact: Led compliance assessments and gap analyses that enabled organizations to meet regulatory and industry security benchmarks.
+              I also design awareness programs to foster a strong security culture and formalize security processes to ensure audit readiness.
+          </li>
           </ul>
         </div>
       </section>
