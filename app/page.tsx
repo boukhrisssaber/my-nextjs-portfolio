@@ -113,24 +113,18 @@ Applied License in Computer Science – ISI Mahdia, University of Monastir (2021
         <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
           <h2 className="text-2xl font-bold mb-4">Experience & Achievements</h2>
           <ul className="text-gray-600 dark:text-gray-300 mb-4 space-y-2">
-            <li>
-                ⚙️ <b>Founder & Developer – CyberFlex (2024–Present)</b><br />
-                Launched a web-based cybertoolkit offering free tools and utilities for security, development and design pros and students.
-                Designed with usability, modularity, and security in mind.
-                Tools include port scanner, Freelancing fees and rates calculators, and other many tools
-            </li>
+          <li>
+              💼 <b>Cybersecurity Consultant – GRC @ DefensyLAB (May 2025–Present)</b><br />
+              At DefensyLAB, I specialize in Governance, Risk, and Compliance, helping clients align with ISO/IEC 27001, 27002, and 27005 standards through tailored security policies and risk frameworks.<br />
+              Impact: Conducted compliance assessments and gap analyses that enabled organizations to meet regulatory and industry security benchmarks.
+              I also design awareness programs to foster a strong security culture and formalize security processes to ensure audit readiness.
+          </li>
             <li>
               🛡️ <b>Junior Cybersecurity Specialist @ Securas Technologies (2023–2025)</b><br />
               At Securas, I handle a mix of penetration testing, SIEM analysis, user awareness, and even internal mentoring.<br />
               Impact: Introduced a new security solution that significantly improved team efficiency and detection speed in pentesting.
               I also help shape internal cybersecurity strategies and support virtualization environments.            
             </li>
-            <li>
-              💼 <b>Cybersecurity Consultant – GRC @ DefensyLAB (May 2025–Present)</b><br />
-              At DefensyLAB, I specialize in Governance, Risk, and Compliance, helping clients align with ISO/IEC 27001, 27002, and 27005 standards through tailored security policies and risk frameworks.<br />
-              Impact: Conducted compliance assessments and gap analyses that enabled organizations to meet regulatory and industry security benchmarks.
-              I also design awareness programs to foster a strong security culture and formalize security processes to ensure audit readiness.
-          </li>
           </ul>
         </div>
       </section>
