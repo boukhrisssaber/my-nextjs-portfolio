@@ -4,7 +4,6 @@ A modern, open source portfolio template built with Next.js, featuring a beautif
 
 ## Features
 - ⚡ Modern, responsive design
-- 🧑‍💻 "Hire Me" page with real testimonials and review slider
 - 🌍 FAQ/services section (easily customizable)
 - 🌙 Dark mode support
 - 🛠️ Built with Next.js 15+, Tailwind CSS, and Swiper.js
@@ -33,7 +32,6 @@ A modern, open source portfolio template built with Next.js, featuring a beautif
 
 ## Customization
 - Edit content in the `/app` directory (pages, components, etc.)
-- Update testimonials, FAQ, and services in `app/hire-me/page.tsx`
 - Replace images/logos in the `/public` directory
 - Tweak styles in `app/globals.css` and `tailwind.config.js`
 
