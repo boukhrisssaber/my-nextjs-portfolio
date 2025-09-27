@@ -63,7 +63,7 @@ export default async function Home() {
               <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z" />
             </svg>
           </a>
-          <a href="mailto:saber@levelzup.pro" target="_blank" className="transition-all duration-300 hover:scale-110 hover:text-teal-500">
+          <a href="mailto:boukhrisssaber@gmail.com" target="_blank" className="transition-all duration-300 hover:scale-110 hover:text-teal-500">
             <svg
               viewBox="0 0 1024 1024"
               fill="currentColor"
@@ -73,13 +73,9 @@ export default async function Home() {
             </svg>
           </a>
           <a href="https://twitter.com/saberboukhriss" target="_blank" className="transition-all duration-300 hover:scale-110 hover:text-teal-500">
-            <svg
-              viewBox="0 0 1024 1024"
-              fill="currentColor"
-              className="w-8 h-8"
-            >
-              <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm215.3 337.7c.3 4.7.3 9.6.3 14.4 0 146.8-111.8 315.9-316.1 315.9-63 0-121.4-18.3-170.6-49.8 9 1 17.6 1.4 26.8 1.4 52 0 99.8-17.6 137.9-47.4-48.8-1-89.8-33-103.8-77 17.1 2.5 32.5 2.5 50.1-2a111 111 0 01-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 01-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 00229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35 25.1-4.7 49.1-14.1 70.5-26.7-8.3 25.7-25.7 47.4-48.8 61.1 22.4-2.4 44-8.6 64-17.3-15.1 22.2-34 41.9-55.7 57.6z" />
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-8 h-8">
+            <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+            </svg>    
           </a>
         </div>
       </section>
@@ -102,7 +98,7 @@ Arabic (native), English (fluent), French (professional), German, Spanish, and, 
 <br />
 <br />
 🎓 Education:<br />
-Master's in Cybersecurity and Intelligent industry – FSS Sfax, University of Sfax (Ongoing)
+Master's in Cybersecurity and Intelligent industry – FSS Sfax, University of Sfax (2025)
 <br />
 Master's in Information Systems Security – ISIM Gabes, University of Gabes (2023)
 <br />
@@ -114,7 +110,7 @@ Applied License in Computer Science – ISI Mahdia, University of Monastir (2021
           <h2 className="text-2xl font-bold mb-4">Experience & Achievements</h2>
           <ul className="text-gray-600 dark:text-gray-300 mb-4 space-y-2">
           <li>
-              💼 <b>Cybersecurity Consultant – GRC @ DefensyLAB (May 2025–Present)</b><br />
+              💼 <b>Cybersecurity Consultant – GRC @ DefensyLAB (2025)</b><br />
               At DefensyLAB, I specialize in Governance, Risk, and Compliance, helping clients align with ISO/IEC 27001, 27002, and 27005 standards through tailored security policies and risk frameworks.<br />
               Impact: Conducted compliance assessments and gap analyses that enabled organizations to meet regulatory and industry security benchmarks.
               I also design awareness programs to foster a strong security culture and formalize security processes to ensure audit readiness.
