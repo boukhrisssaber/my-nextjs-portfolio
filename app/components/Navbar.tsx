@@ -68,6 +68,17 @@ export default function Navbar() {
                   >
                     Guestbook
                   </Link>
+                  <Link
+                    href="/hire-me"
+                    prefetch
+                    className={`${
+                      pathname === "/hire-me"
+                        ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    }`}
+                  >
+                    Hire Me
+                  </Link>
                   <Themebutton />
                 </div>
               </div>

@@ -162,11 +162,6 @@ export default function HireMe() {
 
       {/* Hire Me Buttons */}
       <div className="flex flex-col sm:flex-row justify-center gap-6 w-full mb-14">
-        <Link href="https://www.fiverr.com/s/Q7EGLR3" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-xl text-lg shadow transition w-full sm:w-auto">
-          <Image src="/fiverr.svg" alt="Fiverr Logo" width={28} height={28} />
-          Hire me on Fiverr
-        </Link>
-        <span className="hidden sm:inline-block self-center text-gray-400 font-bold">or</span>
         <Link href="https://www.upwork.com/freelancers/~015f882658b91644c0?mp_source=share" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow transition w-full sm:w-auto">
           <Image src="/upwork.svg" alt="Upwork Logo" width={28} height={28} />
           Hire me on Upwork
