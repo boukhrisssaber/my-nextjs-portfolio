@@ -85,16 +85,16 @@ export default async function Home() {
         <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            👋 Hi, I'm Saber Boukhriss — a cybersecurity enthusiast based in Tunisia, on a mission to make digital spaces safer and smarter.
+            👋 Hi, I'm Saber Boukhriss, a cybersecurity enthusiast based in Tunisia, on a mission to make digital spaces safer and smarter.
 
 From securing Web Systems to guiding others in their security journey, I've built a career rooted in curiosity, resilience, and continuous learning. My passion lies in penetration testing, security monitoring, and creating awareness programs that demystify cybersecurity for teams and organizations.
 
-I'm also the creator of CyberFlex (check the projects page), a cybertoolkit designed to simplify and centralize essential cybersecurity tools for professionals and learners alike.
+I'm also the creator of CyberFlex and Nexthire (check the projects page), and some other stuff.
 
-When I'm not diving into logs or crafting security reports, you'll find me learning new languages or mentoring aspiring professionals in the field.
+When I'm not diving into logs or writing security reports, you'll find me learning new languages or mentoring aspiring professionals in the field.
 <br /><br />
 🌐 Languages:<br />
-Arabic (native), English (fluent), French (professional), German, Spanish, and, Japanese (basic)
+Arabic (native), English (professional), French (conversational), German (basic), Spanish (basic), and Japanese (basic)
 <br />
 <br />
 🎓 Education:<br />
@@ -112,7 +112,7 @@ Applied License in Computer Science – ISI Mahdia, University of Monastir (2021
           <li>
               💼 <b>Cybersecurity Consultant – GRC @ DefensyLAB (2025)</b><br />
               At DefensyLAB, I specialize in Governance, Risk, and Compliance, helping clients align with ISO/IEC 27001, 27002, and 27005 standards through tailored security policies and risk frameworks.<br />
-              Impact: Conducted compliance assessments and gap analyses that enabled organizations to meet regulatory and industry security benchmarks.
+              Impact: Wrote comprehensive security policies and procedures that improved client compliance posture.
               I also design awareness programs to foster a strong security culture and formalize security processes to ensure audit readiness.
           </li>
             <li>
