@@ -13,4 +13,5 @@ export interface Certification {
   issueDate: string;
   expiryDate?: string;
   credentialId?: string;
+  category?: 'aws' | 'security' | 'cloud' | 'network' | 'compliance' | 'other';
 } 

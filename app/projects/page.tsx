@@ -29,51 +29,46 @@ export default async function Projects() {
   const data: Data[] = await getProjects();
 
   return (
-    <div className="divide-y divide-gray-200 dark:divide-gray-700">
-      <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          All Projects
+    <div className="space-y-8">
+      <div>
+        <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
+          🛠️ Projects
         </h1>
+        <p className="mt-2 text-gray-500 dark:text-gray-400">
+          Things I&apos;ve built and worked on.
+        </p>
       </div>
 
-      <div className="grid gap-y-8 sm:gap-6  sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-10 pt-8">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {data.map((project) => (
-          <article
+          <a
             key={project._id}
-            className="overflow-hidden dark:border-zinc-600 rounded-lg border border-gray-100 bg-white shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group overflow-hidden rounded-xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md hover:border-teal-200 dark:hover:border-teal-800 transition-all duration-200"
           >
-            <div className="h-56 w-full relative">
+            <div className="h-48 w-full relative bg-gray-100 dark:bg-gray-800">
               <Image
                 fill
                 src={project.imageUrl}
-                alt="Image of the project"
-                className="w-full h-full object-cover"
+                alt={project.title}
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-
-            <div className="p-4 sm:p-6">
-              <a href={project.link} target="_blank">
-                <h3 className="text-lg font-medium text-gray-900 dark:text-white">
-                  {project.title}
-                </h3>
-              </a>
-
-              <p className=" line-clamp-3 mt-2 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+            <div className="p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-teal-500 transition-colors">
+                {project.title}
+              </h3>
+              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 line-clamp-3 leading-relaxed">
                 {project.overview}
               </p>
-
-              <a
-                href={project.link}
-                target="_blank"
-                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-teal-500"
-              >
-                Learn More!
-                <span className="block transition-all group-hover:ms-0.5">
-                  &rarr;
-                </span>
-              </a>
+              <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-teal-500">
+                Learn more
+                <span className="transition-transform group-hover:translate-x-0.5">→</span>
+              </span>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </div>

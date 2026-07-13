@@ -3,110 +3,79 @@
 import Image from "next/image";
 import { urlForImage } from "../../sanity/lib/image";
 import { Certification } from "../../sanity/types";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectCoverflow } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
 
 interface CertificationsProps {
   certifications: Certification[];
 }
 
-const formatDate = (dateStr: string) =>
-  new Date(dateStr).toISOString().slice(0, 10);
+const categoryColors: Record<string, { bg: string; text: string }> = {
+  aws: { bg: "bg-orange-100 dark:bg-orange-900/30", text: "text-orange-700 dark:text-orange-300" },
+  security: { bg: "bg-teal-100 dark:bg-teal-900/30", text: "text-teal-700 dark:text-teal-300" },
+  cloud: { bg: "bg-blue-100 dark:bg-blue-900/30", text: "text-blue-700 dark:text-blue-300" },
+  network: { bg: "bg-purple-100 dark:bg-purple-900/30", text: "text-purple-700 dark:text-purple-300" },
+  compliance: { bg: "bg-amber-100 dark:bg-amber-900/30", text: "text-amber-700 dark:text-amber-300" },
+  other: { bg: "bg-gray-100 dark:bg-gray-800", text: "text-gray-600 dark:text-gray-400" },
+};
+
+const formatDate = (dateStr: string) => {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+};
 
 export default function Certifications({ certifications }: CertificationsProps) {
   return (
-    <div className="relative py-4">
-      {/* Optional: subtle background separation, can be removed if not needed */}
-      {/* <div className="absolute inset-0 z-0 rounded-2xl bg-gradient-to-br from-white/60 via-transparent to-white/60 dark:from-[#181c2f]/60 dark:via-transparent dark:to-[#232946]/60 pointer-events-none"></div> */}
-      <Swiper
-        modules={[Navigation, EffectCoverflow]}
-        navigation={{
-          nextEl: ".swiper-next",
-          prevEl: ".swiper-prev",
-        }}
-        effect="coverflow"
-        grabCursor
-        centeredSlides
-        slidesPerView={1.2}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 120,
-          modifier: 2.5,
-          slideShadows: false,
-        }}
-        className="w-full max-w-2xl mx-auto z-10"
-        style={{ paddingBottom: "3rem" }}
-      >
-        {certifications.map((cert) => {
-          const logoUrl = cert.logo ? urlForImage(cert.logo)?.url() : null;
-          return (
-            <SwiperSlide key={cert._id}>
-              <a
-                href={cert.verificationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center justify-between text-center p-8 bg-white/80 dark:bg-[#232946]/80 backdrop-blur-md rounded-2xl shadow-2xl min-h-[360px] min-w-[320px] max-w-[360px] mx-auto border border-gray-200/60 dark:border-[#232946]/60 transition-transform duration-300 hover:scale-105 hover:shadow-3xl group"
-                style={{ boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.15)" }}
-              >
-                <div className="relative w-20 h-20 flex-shrink-0 mx-auto mb-4 rounded-xl overflow-hidden shadow-md bg-white/60 dark:bg-[#232946]/60">
-                  {logoUrl ? (
-                    <Image
-                      src={logoUrl}
-                      alt={`${cert.title} logo`}
-                      fill
-                      className="object-contain rounded"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded">
-                      <span className="text-xs text-gray-500">No Logo</span>
-                    </div>
-                  )}
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 dark:text-white text-lg mb-2 line-clamp-2">
-                    {cert.title}
-                  </h3>
-                  <p className="text-xs text-gray-600 dark:text-gray-300 mb-1">
-                    {cert.issuer}
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                    Issued {formatDate(cert.issueDate)}
-                    {cert.expiryDate && (
-                      <> · Expires {formatDate(cert.expiryDate)}</>
-                    )}
-                  </p>
-                </div>
-                <div>
-                  <svg
-                    className="w-5 h-5 text-gray-400 inline-block group-hover:text-teal-500 transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {certifications.map((cert) => {
+        const logoUrl = cert.logo ? urlForImage(cert.logo)?.url() : null;
+        const cat = cert.category || "other";
+        const colors = categoryColors[cat] || categoryColors.other;
+        return (
+          <a
+            key={cert._id}
+            href={cert.verificationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50 hover:border-teal-200 dark:hover:border-teal-800 hover:bg-white dark:hover:bg-gray-800 transition-all duration-200 group"
+          >
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 shrink-0 rounded-lg overflow-hidden bg-white dark:bg-gray-700 border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+                {logoUrl ? (
+                  <Image
+                    src={logoUrl}
+                    alt={`${cert.title} logo`}
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full p-0.5"
+                  />
+                ) : (
+                  <svg className="w-5 h-5 text-gray-300 dark:text-gray-600" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
                   </svg>
-                </div>
-              </a>
-            </SwiperSlide>
-          );
-        })}
-        {/* Custom Navigation Arrows */}
-        <div className="swiper-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/70 dark:bg-[#232946]/70 rounded-full shadow-lg cursor-pointer hover:bg-teal-500 hover:text-white transition-all border border-gray-200/60 dark:border-[#232946]/60">
-          <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
-        </div>
-        <div className="swiper-next absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/70 dark:bg-[#232946]/70 rounded-full shadow-lg cursor-pointer hover:bg-teal-500 hover:text-white transition-all border border-gray-200/60 dark:border-[#232946]/60">
-          <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
-        </div>
-      </Swiper>
+                )}
+              </div>
+              <div className="min-w-0 flex-1">
+                {cert.category && (
+                  <span className={`inline-block px-1.5 py-0.5 text-[10px] font-semibold rounded uppercase mb-1 ${colors.bg} ${colors.text}`}>
+                    {cat}
+                  </span>
+                )}
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-white leading-tight line-clamp-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                  {cert.title}
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                  {cert.issuer}
+                </p>
+                <p className="text-[11px] text-gray-400 dark:text-gray-500 mt-0.5">
+                  {formatDate(cert.issueDate)}
+                  {cert.expiryDate && (
+                    <span> - {formatDate(cert.expiryDate)}</span>
+                  )}
+                </p>
+              </div>
+            </div>
+          </a>
+        );
+      })}
     </div>
   );
-} 
+}
