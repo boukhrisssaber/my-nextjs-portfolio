@@ -27,22 +27,16 @@ export default function Navbar() {
               </div>
 
               <div className="hidden sm:flex sm:items-center sm:gap-1">
-                {[
-                  { href: "/", label: "Home" },
-                  { href: "/projects", label: "Projects" },
-                ].map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                      pathname === link.href
-                        ? "text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-950/50"
-                        : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                <Link
+                  href="/"
+                  className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                    pathname === "/"
+                      ? "text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-950/50"
+                      : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }`}
+                >
+                  Home
+                </Link>
                 <div className="ml-2">
                   <Themebutton />
                 </div>
@@ -67,22 +61,16 @@ export default function Navbar() {
 
           <Disclosure.Panel className="sm:hidden border-t border-gray-100 dark:border-gray-800">
             <div className="px-4 py-2 space-y-1">
-              {[
-                { href: "/", label: "Home" },
-                { href: "/projects", label: "Projects" },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    pathname === link.href
-                      ? "text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-950/50"
-                      : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              <Link
+                href="/"
+                className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  pathname === "/"
+                    ? "text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-950/50"
+                    : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
+                }`}
+              >
+                Home
+              </Link>
             </div>
           </Disclosure.Panel>
         </>
